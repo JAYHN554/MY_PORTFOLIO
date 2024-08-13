@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #282c34;
+    margin: 0;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.typing-container {
+    display: flex;
+    align-items: center;
+}
+
+.typing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #fff;
+}
+
+.cursor {
+    margin-left: 5px;
+    font-weight: bold;
+    animation: blink 0.7s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
